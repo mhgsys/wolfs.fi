@@ -15,18 +15,21 @@ body {
 .logo {
   width: 40%;                /* scales with container */
   max-width: 140px;          /* prevents it from getting too huge */
-  height: 140px;             /* fixed height to display background */
+  aspect-ratio: 1 / 1;       /* keeps square ratio for logo */
   margin-bottom: 1em;
   background-image: url('img/logo.png'); /* logo path */
-  background-size: contain;   /* scale image proportionally */
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  display: inline-block;      /* ensures it centers properly in flex */
   -webkit-user-drag: none;
   user-drag: none;
   opacity: 0;                 /* start invisible for fade-in */
   animation: fadeIn 2s forwards;
   animation-delay: 1s;
 }
+
+
 
 h1 {
   font-size: 2em;
