@@ -10,33 +10,42 @@ body {
   justify-content: center;
   flex-direction: column;
   text-align: center;
+  margin: 0;
 }
 
+.container.text-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;      /* center children horizontally */
+  justify-content: center;
+  text-align: center;
+}
+
+/* Responsive Logo */
 .logo {
   width: 40%;                /* scales with container */
-  max-width: 140px;          /* prevents it from getting too huge */
-  aspect-ratio: 1 / 1;       /* keeps square ratio for logo */
-  margin-bottom: 1em;
-  background-image: url('img/logo.png'); /* logo path */
-  background-size: contain;
+  max-width: 140px;          /* cap maximum size */
+  height: auto;              /* keeps aspect ratio */
+  aspect-ratio: 1 / 1;       /* ensures square ratio for logo */
+  background-image: url('img/logo.png');
+  background-size: contain;   /* scale image proportionally */
   background-repeat: no-repeat;
   background-position: center;
-  display: inline-block;      /* ensures it centers properly in flex */
+  display: block;
+  margin: 0 auto 1em auto;   /* center horizontally + spacing below */
   -webkit-user-drag: none;
   user-drag: none;
-  opacity: 0;                 /* start invisible for fade-in */
+  opacity: 0;                /* start invisible for fade-in */
   animation: fadeIn 2s forwards;
   animation-delay: 1s;
 }
 
-
-
 h1 {
   font-size: 2em;
   margin-bottom: 0.5em;
-  opacity: 0; /* start invisible */
+  opacity: 0;                 /* start invisible */
   animation: fadeIn 2s forwards; /* fade in over 2 seconds */
-  animation-delay: 1s; /* wait 1 second before fading in */
+  animation-delay: 1s;         /* wait 1 second before fading in */
 }
 
 p {
