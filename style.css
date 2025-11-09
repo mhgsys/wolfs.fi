@@ -1,7 +1,6 @@
 /* style.css */
 
 body {
-  background: linear-gradient(135deg, #0e0e0e, #1a1a1a);
   background-color: #0e0e0e;
   color: #fff;
   font-family: Arial, sans-serif;
@@ -12,6 +11,7 @@ body {
   flex-direction: column;
   text-align: center;
   margin: 0;
+  background: linear-gradient(135deg, #0e0e0e, #1a1a1a);
 }
 
 .container.text-center {
