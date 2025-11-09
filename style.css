@@ -13,16 +13,19 @@ body {
 }
 
 .logo {
-  width: 40%;        /* scales with container */
-  max-width: 140px;  /* prevents it from getting too huge */
-  height: 140px;     /* adjust according to your logo ratio */
+  width: 40%;                /* scales with container */
+  max-width: 140px;          /* prevents it from getting too huge */
+  height: 140px;             /* fixed height to display background */
   margin-bottom: 1em;
-  background-image: url('img/logo.png'); /* your logo */
-  background-size: contain;
+  background-image: url('img/logo.png'); /* logo path */
+  background-size: contain;   /* scale image proportionally */
   background-repeat: no-repeat;
   background-position: center;
   -webkit-user-drag: none;
   user-drag: none;
+  opacity: 0;                 /* start invisible for fade-in */
+  animation: fadeIn 2s forwards;
+  animation-delay: 1s;
 }
 
 h1 {
