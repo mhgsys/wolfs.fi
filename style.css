@@ -15,7 +15,14 @@ body {
 .logo {
   width: 40%;        /* scales with container */
   max-width: 140px;  /* prevents it from getting too huge */
+  height: 140px;     /* adjust according to your logo ratio */
   margin-bottom: 1em;
+  background-image: url('img/logo.png'); /* your logo */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-user-drag: none;
+  user-drag: none;
 }
 
 h1 {
