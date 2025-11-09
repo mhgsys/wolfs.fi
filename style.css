@@ -35,9 +35,6 @@ body {
   margin: 0 auto 1em auto;   /* center horizontally + spacing below */
   -webkit-user-drag: none;
   user-drag: none;
-  opacity: 0;                /* start invisible for fade-in */
-  animation: fadeIn 2s forwards;
-  animation-delay: 1s;
 }
 
 h1 {
