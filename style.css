@@ -12,23 +12,23 @@ body {
   text-align: center;
 }
 
-h1 {
-  font-size: 3em;
-  margin-bottom: 0.5em;
+.logo {
+  max-width: 150px;
+  margin-bottom: 1em;
 }
 
-h2 {
-  color: #fff;
-  font-size: 1.75em;
-  margin-bottom: 1em;
+h1 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
   opacity: 0; /* start invisible */
-  animation: fadeIn 4s forwards; /* fade in over 2 seconds */
+  animation: fadeIn 2s forwards; /* fade in over 2 seconds */
   animation-delay: 1s; /* wait 1 second before fading in */
 }
 
 p {
   color: #aaa;
   font-size: 1.25em;
+  margin-top: 0.5em;
 }
 
 /* Keyframes for fade-in */
