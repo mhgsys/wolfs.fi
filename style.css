@@ -41,27 +41,10 @@ body {
 h1 {
   font-size: 2em;
   margin-bottom: 0.5em;
+  opacity: 0;                 /* start invisible */
+  animation: fadeIn 4s forwards; /* fade in over 2 seconds */
+  animation-delay: 1s;         /* wait 1 second before fading in */
 }
-
-.typewriter {
-  overflow: hidden;                /* Hides text until "typed" */
-  border-right: 2px solid black;   /* Cursor */
-  white-space: nowrap;
-  width: 0;                        /* Start hidden */
-  animation:
-    typing 5s steps(50, end) forwards,
-    blink 0.7s step-end infinite;
-}
-
-@keyframes typing {
-  from { width: 0; }
-  to   { width: 100%; }
-}
-
-@keyframes blink {
-  50% { border-color: transparent; }
-}
-
 
 p {
   color: #aaa;
