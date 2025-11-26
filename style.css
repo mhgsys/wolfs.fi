@@ -49,7 +49,7 @@ h1 {
   white-space: nowrap;
   width: 0;                        /* Start hidden */
   animation:
-    typing 7s steps(40, end) forwards,
+    typing 5s steps(50, end) forwards,
     blink 0.7s step-end infinite;
 }
 
