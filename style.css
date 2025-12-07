@@ -3,11 +3,11 @@ body {
   font-family: Arial, sans-serif;
 }
 
-/* Logo as responsive background */
+/* Logo as responsive background and horizontally centered */
 .logo {
-  width: 20vw;             /* scales with viewport width */
-  max-width: 200px;        /* caps size on large screens */
-  min-width: 80px;         /* ensures visibility on small screens */
+  width: 20vw;              /* scales with viewport width */
+  max-width: 200px;          /* caps size on large screens */
+  min-width: 80px;           /* ensures visibility on small screens */
   aspect-ratio: 1 / 1;
   background-image: url('img/logo.png');
   background-size: contain;
