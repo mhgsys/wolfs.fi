@@ -20,7 +20,7 @@ body {
   align-items: center;      /* center children horizontally */
   justify-content: center;
   text-align: center;
-  adding-bottom: 60px; /* add space equal to footer height */
+  padding-bottom: 60px; /* add space equal to footer height */
   min-height: calc(100vh - 60px); /* ensures vertical centering works with footer */
 }
 
