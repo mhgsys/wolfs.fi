@@ -5,9 +5,9 @@ body {
 
 /* Logo as responsive background */
 .logo {
-  width: 20vw;              /* scales with viewport width */
-  max-width: 200px;          /* caps size on large screens */
-  min-width: 80px;           /* ensures visibility on small screens */
+  width: 20vw;
+  max-width: 200px;
+  min-width: 80px;
   aspect-ratio: 1 / 1;
   background-image: url('img/logo.png');
   background-size: contain;
@@ -17,7 +17,7 @@ body {
   user-drag: none;
 }
 
-/* Optional fade-in animation for heading */
+/* Fade-in animation for main content */
 h1, h2, p {
   opacity: 0;
   animation: fadeIn 2s forwards;
@@ -27,15 +27,15 @@ h1 { animation-delay: 0.5s; }
 h2 { animation-delay: 1s; }
 p { animation-delay: 1.5s; }
 
-@keyframes fadeIn {
-  to { opacity: 1; }
-}
-
-/* Footer fade-in */
-.position-absolute {
+/* Footer fade-in after main content */
+.fade-footer {
   opacity: 0;
   animation: fadeInFooter 2s forwards;
-  animation-delay: 2s;
+  animation-delay: 3s; /* appears after headings and paragraphs */
+}
+
+@keyframes fadeIn {
+  to { opacity: 1; }
 }
 
 @keyframes fadeInFooter {
