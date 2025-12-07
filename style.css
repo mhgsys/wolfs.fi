@@ -79,8 +79,8 @@ p {
 /* Copyright notice */
 .copyright {
   position: fixed;
-  bottom: 10px;
-  right: 10px;
+  bottom: 1%;
+  right: 1%;
   color: #666;
   font-size: 0.9em;
   opacity: 0;
