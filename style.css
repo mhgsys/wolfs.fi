@@ -41,28 +41,11 @@ body {
 
 h1 {
   font-size: 2em;
-  margin-bottom: 0.5em;
 }
 
-.typewriter {
-  overflow: hidden;                /* Hides text until "typed" */
-  border-right: 2px solid black;   /* Cursor */
-  white-space: nowrap;
-  width: 0;                        /* Start hidden */
-  animation:
-    typing 5s steps(50, end) forwards,
-    blink 0.7s step-end infinite;
+h2{
+  font-size:1.50em;
 }
-
-@keyframes typing {
-  from { width: 0; }
-  to   { width: 100%; }
-}
-
-@keyframes blink {
-  50% { border-color: transparent; }
-}
-
 
 p {
   color: #aaa;
