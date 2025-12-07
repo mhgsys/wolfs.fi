@@ -1,43 +1,95 @@
+/* style.css */
+
 body {
-  background: linear-gradient(135deg, #0e0e0e, #1a1a1a);
+  background-color: #0e0e0e;
+  color: #fff;
   font-family: Arial, sans-serif;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  margin: 0;
+  background: linear-gradient(135deg, #0e0e0e, #1a1a1a);
 }
 
-/* Logo as responsive background and centered */
+.container.text-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;      /* center children horizontally */
+  justify-content: center;
+  text-align: center;
+}
+
+/* Responsive Logo */
 .logo {
-  width: 20vw;              /* scales with viewport width */
-  max-width: 200px;          /* caps size on large screens */
-  min-width: 80px;           /* ensures visibility on small screens */
-  aspect-ratio: 1 / 1;
+  width: 40%;                /* scales with container */
+  max-width: 140px;          /* cap maximum size */
+  height: auto;              /* keeps aspect ratio */
+  aspect-ratio: 1 / 1;       /* ensures square ratio for logo */
   background-image: url('img/logo.png');
-  background-size: contain;
+  background-size: contain;   /* scale image proportionally */
   background-repeat: no-repeat;
   background-position: center;
+  display: block;
+  margin: 0 auto 1em auto;   /* center horizontally + spacing below */
   -webkit-user-drag: none;
   user-drag: none;
 }
 
-/* Fade-in animation for main content */
-h1, h2, p {
-  opacity: 0;
-  animation: fadeIn 2s forwards;
+h1 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
 }
 
-h1 { animation-delay: 0.5s; }
-h2 { animation-delay: 1s; }
-p { animation-delay: 1.5s; }
-
-/* Footer fade-in after main content */
-.fade-footer {
-  opacity: 0;
-  animation: fadeInFooter 2s forwards;
-  animation-delay: 3s; /* appears after headings and paragraphs */
+.typewriter {
+  overflow: hidden;                /* Hides text until "typed" */
+  border-right: 2px solid black;   /* Cursor */
+  white-space: nowrap;
+  width: 0;                        /* Start hidden */
+  animation:
+    typing 5s steps(50, end) forwards,
+    blink 0.7s step-end infinite;
 }
 
+@keyframes typing {
+  from { width: 0; }
+  to   { width: 100%; }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+
+p {
+  color: #aaa;
+  font-size: 1.25em;
+  margin-top: 0.5em;
+}
+
+/* Keyframes for fade-in */
 @keyframes fadeIn {
-  to { opacity: 1; }
+  to {
+    opacity: 1;
+  }
 }
 
-@keyframes fadeInFooter {
-  to { opacity: 1; }
+/* Copyright notice */
+.copyright {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  color: #666;
+  font-size: 0.9em;
+  opacity: 0;
+  animation: fadeInCopyright 2s forwards;
+  animation-delay: 3s; /* appears after main H1 fades in */
+}
+
+@keyframes fadeInCopyright {
+  to {
+    opacity: 1;
+  }
 }
