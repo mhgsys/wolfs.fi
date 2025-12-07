@@ -5,9 +5,9 @@ body {
 
 /* Logo as responsive background */
 .logo {
-  width: 20vw;
-  max-width: 200px;
-  min-width: 80px;
+  width: 20vw;             /* scales with viewport width */
+  max-width: 200px;        /* caps size on large screens */
+  min-width: 80px;         /* ensures visibility on small screens */
   aspect-ratio: 1 / 1;
   background-image: url('img/logo.png');
   background-size: contain;
