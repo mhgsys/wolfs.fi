@@ -79,14 +79,16 @@ p {
 
 /* Copyright notice */
 .copyright {
-  margin-top: 2em;
+  position: fixed;
+  bottom: 1%;
+  right: 1%;
   color: #666;
   font-size: 0.9em;
   opacity: 0;
   animation: fadeInCopyright 2s forwards;
-  animation-delay: 3s;
-  text-align: right;     /* right-align within container */
+  animation-delay: 3s; /* appears after main H1 fades in */
 }
+
 
 @keyframes fadeInCopyright {
   to {
